@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'Temp', 'index-4.ejs'));
+    res.render(path.join(__dirname, 'views', 'index.ejs'));
 });
 
 
