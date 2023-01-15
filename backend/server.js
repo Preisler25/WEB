@@ -16,10 +16,11 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 
 
-// HTML Routes
+//#region html
 app.get('/', (req, res) => {
     res.render(path.join(__dirname, 'views', 'index.ejs'));
 });
+//#endregion
 
 //#region css
 app.get('/allmincss', (req, res) => {
