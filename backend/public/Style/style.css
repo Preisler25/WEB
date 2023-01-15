@@ -50,7 +50,7 @@
  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
  @font-face {
    font-family: ClashDisplay;
-   src: url(../fonts/ClashDisplay-Semibold.ttf);
+   src: url(./font3);
  }
  * {
    margin: 0;
@@ -120,7 +120,7 @@
  }
  @font-face {
    font-family: ClashDisplay;
-   src: url(../fonts/ClashDisplay-Semibold.ttf);
+   src: url(./font3);
  }
  .hero_main {
    padding-top: 250px;

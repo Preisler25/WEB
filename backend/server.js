@@ -91,6 +91,9 @@ app.get('/mainjs', (req, res) => {
 app.get('/logo', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'img', 'logo', 'logo.svg'));
 });
+app.get('/logo2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'logo', 'logo2.svg'));
+});
 app.get('/hero1', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'img', 'hero', '4', '1.png'));
 });
@@ -171,6 +174,18 @@ app.get('/project1', (req, res) => {
 });
 app.get('/videobg', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'img', 'video_bg.png'));
+});
+//#endregion
+
+//#region font
+app.get('/font1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','Style', 'plugins','font-awesome', 'webfonts', 'fa-solid-900.woff2'));
+});
+app.get('/font2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','Style', 'plugins','font-awesome', 'webfonts', 'fa-brands-400.woff2'));
+});
+app.get('/font3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','fonts', 'ClashDisplay-Semibold.ttf'));
 });
 //#endregion
 
