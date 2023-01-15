@@ -15,14 +15,14 @@ client.connect();
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 
+
+// HTML Routes
 app.get('/', (req, res) => {
     res.render(path.join(__dirname, 'views', 'index.ejs'));
 });
 
-app.get('/tabicon', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'img', 'icon', 'tab-icon.png'));
-});
-//public/Style/plugins/font-awesome/css/all.min.css
+//region CSS
+
 app.get('/allmincss', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'Style', 'plugins','font-awesome','css', 'all.min.css'));
 });
@@ -50,14 +50,12 @@ app.get('/stylecss', (req, res) => {
 app.get('/responsivecss', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'Style', 'responsive.css'));
 });
+//region end CSS
 
-app.get('/logo', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'img', 'logo', 'logo.svg'));
-});
-//assets/img/hero/4/1.png
-app.get('/hero1', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'img', 'hero', '4', '1.png'));
-});
+
+// JS// JS// JS// JS// JS// JS// JS// JS// JS
+
+
 //assets/js/jquery.min.js
 app.get('/jqueryminjs', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'js', 'jquery.min.js'));
@@ -109,6 +107,97 @@ app.get('/jquerycounterupjs', (req, res) => {
 app.get('/mainjs', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'js', 'main.js'));
 });
+//#endregion
+
+//#regoion img
+app.get('/logo', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'logo', 'logo.svg'));
+});
+app.get('/hero1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'hero', '4', '1.png'));
+});
+app.get('/hero2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'hero', '4', '2.png'));
+});
+app.get('/heroshape1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'hero', 'shape', '4', '1.png'));
+});
+app.get('/heroshape2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'hero', 'shape', '4', '2.png'));
+});
+app.get('/heroshape3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'hero', 'shape', '4', '3.png'));
+});
+app.get('/offerbox4', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'icon', 'offer_box', '4.svg'));
+});
+app.get('/offerbox2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'icon', 'offer_box', '2.svg'));
+});
+app.get('/offerbox1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'icon', 'offer_box', '1.svg'));
+});
+app.get('/ctabg', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'cta', 'bg_2.png'));
+});
+app.get('/footer1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'footer', '1.png'));
+});
+app.get('/footer2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'footer', '2.png'));
+});
+app.get('/footer3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'footer', '3.png'));
+});
+app.get('/clients1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'clients', '1.png'));
+});
+app.get('/clients2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'clients', '2.png'));
+});
+app.get('/clients3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'clients', '3.png'));
+});
+app.get('/clients4', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'clients', '4.png'));
+});
+app.get('/clients5', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'clients', '5.png'));
+});
+app.get('/award', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'icon', 'award.png'));
+});
+app.get('/digitalagency', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'digital_agency.png'));
+});
+app.get('/shape1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'project', 'shape', '1.png'));
+});
+app.get('/shape4', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'project', 'shape', '4.png'));
+});
+app.get('/shape3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'project', 'shape', '3.png'));
+});
+app.get('/project4', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'project', '4.png'));
+});
+app.get('/project3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'project', '3.png'));
+});
+app.get('/project2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'project', '2.png'));
+});
+app.get('/project1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'project', '1.png'));
+});
+app.get('/videobg', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'img', 'video_bg.png'));
+});
+//#endregion
+
+
+//app listen
 
 app.listen(3000, () => {
   console.log('Server started on port 3000');
