@@ -20,7 +20,25 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', (req, res) => {
     res.render(path.join(__dirname, 'views', 'index.ejs'));
 });
-//#endregion
+app.get('/about', (req, res) => {
+    res.render(path.join(__dirname, 'views', 'about-us.ejs'));
+});
+app.get('/contact', (req, res) => {
+    res.render(path.join(__dirname, 'views', 'contact.ejs'));
+});
+app.get('/pricing', (req, res) => {
+    res.render(path.join(__dirname, 'views', 'pricing.ejs'));
+});
+app.get('/services', (req, res) => {
+    res.render(path.join(__dirname, 'views', 'services.ejs'));
+});
+app.get('/single', (req, res) => {
+    res.render(path.join(__dirname, 'views', 'single-service.ejs'));
+});
+app.get('/team', (req, res) => {
+    res.render(path.join(__dirname, 'views', 'team.ejs'));
+});
+ //#endregion
 
 //#region css
 app.get('/allmincss', (req, res) => {
