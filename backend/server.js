@@ -10,7 +10,7 @@ const client = new Client({
     user: 'postgres',
     password: 'admin'
 });
-client.connect();
+//client.connect();
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
