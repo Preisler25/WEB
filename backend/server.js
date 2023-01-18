@@ -30,7 +30,7 @@ app.get('/pricing', (req, res) => {
     res.render(path.join(__dirname, 'views', 'pricing.ejs'));
 });
 app.get('/services', (req, res) => {
-    res.render(path.join(__dirname, 'views', 'services.ejs'));
+    res.render(path.join(__dirname, 'views', 'service.ejs'));
 });
 app.get('/single', (req, res) => {
     res.render(path.join(__dirname, 'views', 'single-service.ejs'));
