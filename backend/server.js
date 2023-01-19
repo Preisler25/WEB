@@ -11,6 +11,7 @@ const client = new Client({
     password: 'admin'
 });
 //client.connect();
+//app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
