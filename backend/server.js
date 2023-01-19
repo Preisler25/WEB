@@ -108,7 +108,7 @@ app.get('/mainjs', (req, res) => {
 
 //#region img
 app.get('/logo', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'img', 'logo', 'logo.svg'));
+  res.sendFile(path.join(__dirname, 'public', 'img', 'logo', 'logo.png'));
 });
 app.get('/logo2', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'img', 'logo', 'logo2.svg'));
