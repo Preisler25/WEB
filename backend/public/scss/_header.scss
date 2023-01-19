@@ -1,11 +1,12 @@
 // Header
 .header_aria {
     .navbar {
+        transition: 0.5s;
         padding-top: 0;
         padding-bottom: 0;
 
         .container {
-            border-bottom: 2px solid #131313;
+            border-bottom: 2px solid #fff;
         }
 
         .navbar-brand {
