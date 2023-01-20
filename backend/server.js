@@ -47,7 +47,7 @@ app.get('/admin', (req, res) => {
     res.render(path.join(__dirname, 'views', 'admin.ejs'));
 });
 //#endregion
-app.post('/login', (req, res) => {
+app.post('/testadmin', (req, res) => {
     if (admin.test(req.body)) {
         res.send(db.getAll(client))
     } else {
