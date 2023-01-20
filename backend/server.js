@@ -39,7 +39,9 @@ app.get('/single', (req, res) => {
 app.get('/team', (req, res) => {
     res.render(path.join(__dirname, 'views', 'team.ejs'));
 });
- //#endregion
+//#endregion
+
+
 
 //#region app
 app.listen(3000, () => {
