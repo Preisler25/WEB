@@ -44,7 +44,7 @@ app.get('/team', (req, res) => {
 //#endregion
 
 app.get('/api', (req, res) => {
-    main.korte();
+    main.saveToDb(client, req);
     res.json({ message: 'API is working' });
 });
 
