@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const main = require('./modules/main');
+const db = require('./modules/db');
 
 const { Client } = require('pg');
 const client = new Client({
@@ -43,9 +44,9 @@ app.get('/team', (req, res) => {
 });
 //#endregion
 
-app.get('/api', (req, res) => {
-    main.korte();
-    res.json({ message: 'API is working' });
+app.post('/api', (req, res) => {
+    db.save(req.body, client)
+    res.redirect('/about')
 });
 
 //#region app
