@@ -1,5 +1,5 @@
 let saveToDb = (db, data)=>{
-    sql = "INSERT INTO `table` (`name`, `age`) VALUES ('"+data.name+"', '"+data.age+"')";
+    sql = "INSERT INTO qa (`name`, `age`) VALUES ('"+data.name+"', '"+data.age+"')";
 };
 
 module.exports = {
