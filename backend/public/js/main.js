@@ -26,8 +26,10 @@
                 var scroll = $(window).scrollTop();
                 if (scroll) {
                     $('.header_aria').addClass('navbar_fixed');
+                    $('#logo').attr('src', 'img/logo/logo.png');
                 } else {
                     $('.header_aria').removeClass('navbar_fixed');
+                    $('#logo').attr('src', 'img/logo/logo2.png');
                 }
             });
         }
