@@ -6,11 +6,12 @@ const { Client } = require('pg');
 const client = new Client({
     host: 'localhost',
     port: 5432,
-    database: 'amm',
+    database: 'BMB',
     user: 'postgres',
     password: 'admin'
 });
 //client.connect();
+//app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
