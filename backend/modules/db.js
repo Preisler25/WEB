@@ -7,7 +7,13 @@ let save = (data, db)=>{
         console.log(result);
 }});}
 
+let getAll = async(db) => {
+    const query = 'SELECT * FROM qa';
+    let data = await db.query(query);
+    return data.rows;
+}
+
 module.exports = {
     save,
-
+    getAll
 };

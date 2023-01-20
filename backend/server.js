@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const main = require('./modules/main');
+const admin = require('./modules/admin');
 const db = require('./modules/db');
 
 const { Client } = require('pg');
@@ -42,7 +43,17 @@ app.get('/single', (req, res) => {
 app.get('/team', (req, res) => {
     res.render(path.join(__dirname, 'views', 'team.ejs'));
 });
+app.get('/admin', (req, res) => {
+    res.render(path.join(__dirname, 'views', 'admin.ejs'));
+});
 //#endregion
+app.post('/login', (req, res) => {
+    if (admin.test(req.body)) {
+        res.send(db.getAll(client))
+    } else {
+        res.redirect('/')
+    }
+});
 
 app.post('/api', (req, res) => {
     db.save(req.body, client)
