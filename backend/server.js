@@ -1,16 +1,17 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const main = require('./modules/main');
 
 const { Client } = require('pg');
 const client = new Client({
     host: 'localhost',
     port: 5432,
-    database: 'BMB',
+    database: 'bmb',
     user: 'postgres',
     password: 'admin'
 });
-//client.connect();
+client.connect();
 //app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs');
@@ -42,7 +43,10 @@ app.get('/team', (req, res) => {
 });
 //#endregion
 
-
+app.get('/api', (req, res) => {
+    main.korte();
+    res.json({ message: 'API is working' });
+});
 
 //#region app
 app.listen(3000, () => {
