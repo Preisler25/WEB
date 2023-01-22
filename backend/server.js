@@ -5,6 +5,7 @@ const main = require('./modules/main');
 const admin = require('./modules/admin');
 const db = require('./modules/db');
 
+
 const { Client } = require('pg');
 const client = new Client({
     host: 'localhost',
@@ -47,9 +48,11 @@ app.get('/admin', (req, res) => {
     res.render(path.join(__dirname, 'views', 'admin.ejs'));
 });
 //#endregion
-app.post('/testadmin', (req, res) => {
+app.post('/testadmin', async(req, res) => {
     if (admin.test(req.body)) {
-        res.send(db.getAll(client))
+        let data  = await db.getAll(client);
+        console.log(data);
+        res.send(data)
     } else {
         res.redirect('/')
     }
