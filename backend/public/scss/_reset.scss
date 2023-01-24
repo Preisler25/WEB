@@ -6,8 +6,11 @@
 }
 
 body {
-    font-family: $inter;
+    font-family: $inter;   
 }
+body::-webkit-scrollbar{
+    display: none;
+  }
 
 a {
     text-decoration: none;
