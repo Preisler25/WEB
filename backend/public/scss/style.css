@@ -1812,7 +1812,7 @@ a {
   color: #ff5154;
   font-family: "ClashDisplay", sans-serif;
   font-weight: 600;
-  font-size: 88px;
+  font-size: 80px;
   line-height: 98px;
 }
 .min_counter_area .single_counter h6 span {
@@ -4026,6 +4026,7 @@ a {
     right: 0;
     top: 20px;
     position: absolute;
+    color: #fff;
   }
 }
 .header_aria .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
