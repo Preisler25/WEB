@@ -2676,6 +2676,10 @@ a {
   text-decoration: underline;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .client {
   padding-top: 110px;
   padding-bottom: 160px;
