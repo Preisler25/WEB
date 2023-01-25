@@ -52,10 +52,6 @@
    font-family: ClashDisplay;
    src: url(../fonts/ClashDisplay-Semibold.ttf);
  }
-::-webkit-scrollbar{
-  display: none;
-}
-
  * {
    margin: 0;
    padding: 0;
@@ -2505,7 +2501,7 @@
  }
  
  .single_service_with_sidebar {
-   padding-top: 160px;
+   padding-top: 50px;
    padding-bottom: 160px;
  }
  
@@ -2680,6 +2676,10 @@
    text-decoration: underline;
  }
  
+ ::-webkit-scrollbar {
+   display: none;
+ }
+ 
  .client {
    padding-top: 110px;
    padding-bottom: 160px;
@@ -2824,6 +2824,9 @@
  .offer_box.style_two .content .bg_btn_color {
    margin-top: 40px;
  }
+ .offer_box.style_two .content .bg_btn_color:hover {
+   color: #fff;
+ }
  .offer_box.style_two .min_offer_box {
    margin-top: 0;
  }
@@ -2927,11 +2930,14 @@
    margin-bottom: 30px;
  }
  .cta .min_cta_area a {
-   color: #131313;
+   color: #fff;
    font-weight: 600;
    font-size: 42px;
    line-height: 52px;
    text-decoration: underline;
+ }
+ .cta .min_cta_area span {
+   color: #fff;
  }
  
  .cta.h_4 {

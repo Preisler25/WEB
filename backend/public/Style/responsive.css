@@ -881,6 +881,7 @@
 
     .header_aria .navbar-toggler i {
         font-size: 25px;
+        color: #fff;
     }
 
     .header_aria .navbar-collapse {
@@ -890,6 +891,7 @@
     .header_aria .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
         padding-top: 15px;
         padding-bottom: 10px;
+        color: #000;
     }
 }
 
@@ -1767,7 +1769,7 @@
     }
 
     .breadcrumb_area {
-        padding-top: 100px;
+        padding-top: 150px;
         padding-bottom: 60px;
     }
 
