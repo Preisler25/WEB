@@ -28,6 +28,13 @@ a {
         font-size: 66px;
         line-height: 76px;
     }
+    span{
+        color: $main-bg;
+        font-family: $clash-display;
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
 }
 
 .blockquote {

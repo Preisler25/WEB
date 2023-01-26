@@ -80,6 +80,13 @@ a {
   font-size: 66px;
   line-height: 76px;
 }
+.section_title span {
+  color: #ff5154;
+  font-family: "ClashDisplay", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
 
 .blockquote {
   margin-top: 40px;
@@ -1354,6 +1361,7 @@ a {
   transition: 0.3s;
   margin: 0 10px;
   margin-bottom: 40px;
+  list-style-position: outside;
 }
 .min_team_area_two .single_team_two img {
   width: 100%;
@@ -1457,7 +1465,7 @@ a {
 .team_single_area .team_info p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 32px;
 }
@@ -1533,13 +1541,14 @@ a {
 .digital_agency .content p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 32px;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 .digital_agency .content .agency_list {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .digital_agency .content .agency_list li {
   color: #131313;
@@ -3029,8 +3038,8 @@ a {
 .min_progress_area .content p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 32px;
   margin-top: 30px;
 }
@@ -3067,7 +3076,7 @@ a {
   height: 16px;
 }
 .min_progress_area .line_progress_bar .single_items .progress .progress-bar {
-  background-color: #FF7945;
+  background-color: #ff5154;
   width: 0;
 }
 
