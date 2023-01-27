@@ -61,10 +61,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -2674,10 +2670,6 @@ a {
 }
 .portfolio_single_content .bottom .content_item p b {
   text-decoration: underline;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 .client {
