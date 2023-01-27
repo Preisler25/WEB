@@ -28,7 +28,9 @@
                     $('.header_aria').addClass('navbar_fixed');
                     $('#logo').attr('src', 'img/logo/logo.png');
                     $('#barikon').css('color', '#000');
+                if ($(window).width() > 992) {
                     $('.navbar-nav > li > a').css('color', '#000');
+                }
                 }
                  else {
                     $('.header_aria').removeClass('navbar_fixed');

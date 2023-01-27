@@ -76,6 +76,13 @@ a {
   font-size: 66px;
   line-height: 76px;
 }
+.section_title span {
+  color: #ff5154;
+  font-family: "ClashDisplay", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
 
 .blockquote {
   margin-top: 40px;
@@ -1350,6 +1357,7 @@ a {
   transition: 0.3s;
   margin: 0 10px;
   margin-bottom: 40px;
+  list-style-position: outside;
 }
 .min_team_area_two .single_team_two img {
   width: 100%;
@@ -1453,7 +1461,7 @@ a {
 .team_single_area .team_info p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 32px;
 }
@@ -1524,18 +1532,20 @@ a {
 }
 
 .digital_agency {
+  background-color: #ddd;
   padding-bottom: 150px;
 }
 .digital_agency .content p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 32px;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 .digital_agency .content .agency_list {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .digital_agency .content .agency_list li {
   color: #131313;
@@ -2497,7 +2507,7 @@ a {
 }
 
 .single_service_with_sidebar {
-  padding-top: 160px;
+  padding-top: 50px;
   padding-bottom: 160px;
 }
 
@@ -2816,6 +2826,9 @@ a {
 .offer_box.style_two .content .bg_btn_color {
   margin-top: 40px;
 }
+.offer_box.style_two .content .bg_btn_color:hover {
+  color: #fff;
+}
 .offer_box.style_two .min_offer_box {
   margin-top: 0;
 }
@@ -2919,11 +2932,14 @@ a {
   margin-bottom: 30px;
 }
 .cta .min_cta_area a {
-  color: #131313;
+  color: #fff;
   font-weight: 600;
   font-size: 42px;
   line-height: 52px;
   text-decoration: underline;
+}
+.cta .min_cta_area span {
+  color: #fff;
 }
 
 .cta.h_4 {
@@ -3015,8 +3031,8 @@ a {
 .min_progress_area .content p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 32px;
   margin-top: 30px;
 }
@@ -3053,7 +3069,7 @@ a {
   height: 16px;
 }
 .min_progress_area .line_progress_bar .single_items .progress .progress-bar {
-  background-color: #FF7945;
+  background-color: #ff5154;
   width: 0;
 }
 

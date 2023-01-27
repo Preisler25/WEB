@@ -121,6 +121,7 @@
         transition: .3s;
         margin: 0 10px;
         margin-bottom: 40px;
+        list-style-position: outside;
 
         img {
             width: 100%;
@@ -241,7 +242,7 @@
         p {
             color: $pcolor;
             font-family: $inter;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 18px;
             line-height: 32px;
         }
