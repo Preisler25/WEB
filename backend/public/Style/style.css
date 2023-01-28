@@ -1257,7 +1257,7 @@
  }
  
  .team {
-   padding-top: 150px;
+   padding-top: 20px;
    padding-bottom: 150px;
  }
  
@@ -1409,6 +1409,7 @@
    transition: 0.3s;
    margin: 0 10px;
    margin-bottom: 48px;
+   height: 100%;
  }
  .min_team_area_innar .single_team img {
    width: 100%;
@@ -2832,13 +2833,20 @@
    top: 5px;
  }
  .offer_box.style_two .content .bg_btn_color {
-   margin-top: 40px;
+   margin-top: 10px;
  }
  .offer_box.style_two .content .bg_btn_color:hover {
    color: #fff;
  }
  .offer_box.style_two .min_offer_box {
    margin-top: 0;
+ }
+ .offer_box.style_two .offer_btn {
+   margin-top: 50px;
+   text-align: center;
+ }
+ .offer_box.style_two .offer_btn a {
+   margin: 0 auto;
  }
  
  .offer_box.service {

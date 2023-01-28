@@ -64,7 +64,7 @@
         top: 5px;
 
         .bg_btn_color {
-            margin-top: 40px;
+            margin-top: 10px;
         }
         .bg_btn_color:hover {
             color: #fff;
@@ -74,9 +74,19 @@
     .min_offer_box {
         margin-top: 0;
     }
+    .offer_btn{
+        margin-top: 50px;
+        //center the p and the a tag without flex
+        text-align: center;
+        a{
+            margin: 0 auto;
+        }
+    }
 }
 
 // Service 
 .offer_box.service {
     padding-top: 160px;
+
+
 }
