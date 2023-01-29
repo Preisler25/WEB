@@ -1661,6 +1661,112 @@
    padding-top: 160px;
  }
  
+ /* The Modal (background) */
+ .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 99999; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0); /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+   -webkit-animation-name: fadeIn; /* Fade in the background */
+   -webkit-animation-duration: 0.4s;
+   animation-name: fadeIn;
+   animation-duration: 0.4s;
+   text-align: left;
+ }
+ 
+ /* Modal Content */
+ .modal-content {
+   font-size: xx-large;
+   position: relative;
+   bottom: 0;
+   background-color: #fefefe;
+   width: 70%;
+   -webkit-animation-name: slideIn;
+   -webkit-animation-duration: 0.4s;
+   animation-name: slideIn;
+   animation-duration: 0.4s;
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-top: 20%;
+ }
+ 
+ /* The Close Button */
+ .close {
+   color: white;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ .modal-header {
+   font-family: "ClashDisplay", sans-serif;
+   padding: 2px 16px;
+   background-color: #ff5154;
+   color: white;
+ }
+ 
+ .modal-body {
+   padding: 2px 16px;
+   font-family: "Inter", sans-serif;
+   font-size: large;
+ }
+ 
+ .modal-footer {
+   font-family: "ClashDisplay", sans-serif;
+   padding: 2px 16px;
+   background-color: #ff3232;
+   color: white;
+ }
+ 
+ /* Add Animation */
+ @-webkit-keyframes slideIn {
+   from {
+     bottom: -300px;
+     opacity: 0;
+   }
+   to {
+     bottom: 0;
+     opacity: 1;
+   }
+ }
+ @keyframes slideIn {
+   from {
+     bottom: -300px;
+     opacity: 0;
+   }
+   to {
+     bottom: 0;
+     opacity: 1;
+   }
+ }
+ @-webkit-keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
  .testimonial {
    padding-top: 160px;
    padding-bottom: 220px;
@@ -4360,20 +4466,20 @@
    font-size: 30px;
    line-height: 40px;
  }
- .service_sidebar .service_sidebar_post p {
+ .service_sidebar .service_sidebar_post p a {
    color: #131313;
    font-family: "Inter", sans-serif;
    font-weight: 400;
    font-size: 16px;
    line-height: 28px;
  }
- .service_sidebar .service_sidebar_post i.fa-solid {
+ .service_sidebar .service_sidebar_post i.fa-solid a {
    transform: rotate(-45deg);
    font-size: 32px;
    margin-top: 10px;
    transition: 0.3s;
  }
- .service_sidebar .service_sidebar_post:hover i.fa-solid {
+ .service_sidebar .service_sidebar_post:hover i.fa-solid a {
    transform: rotate(0);
  }
  .service_sidebar .shape_img .one {
@@ -4518,7 +4624,7 @@
  }
  
  .footer_bottom {
-   margin-top: 160px;
+   margin-top: 60px;
  }
  .footer_bottom .footer_bottom_list {
    border-bottom: 2px solid #131313;
