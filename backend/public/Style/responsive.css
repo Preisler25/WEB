@@ -52,6 +52,12 @@
     }
 }
 
+@media(max-width:1857px){
+    .breadcrumb_area .shape_img .one {
+        display: none;
+    }
+}
+
 @media(max-width: 1600px) {
     .container {
         max-width: 1320px;
@@ -133,12 +139,15 @@
         font-size: 14px;
     }
 
-    .breadcrumb_area .shape_img .one {
-        display: none;
-    }
 
     .min_project_area_grid_two .single_project .project_bottom {
         padding-right: 50px;
+    }
+}
+
+@media(max-width:1430){
+    .breadcrumb_area .shape_img .two {
+        display: none;
     }
 }
 
@@ -151,9 +160,7 @@
         display: none;
     }
 
-    .breadcrumb_area .shape_img .two {
-        display: none;
-    }
+
 
     .min_project_area_grid_two .single_project .project_top .tags li {
         margin: 0 5px;

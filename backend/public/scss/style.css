@@ -1672,7 +1672,7 @@ a {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgb(0, 0, 0); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0, 0.75); /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
@@ -4271,14 +4271,14 @@ a {
   position: relative;
 }
 .breadcrumb_area .breadcrumb_content h2 {
-  color: #fff;
+  color: #131313;
   font-family: "ClashDisplay", sans-serif;
   font-weight: 600;
   font-size: 120px;
   line-height: 124px;
 }
 .breadcrumb_area .breadcrumb_content .breadcrumb_category {
-  color: #fff;
+  color: #131313;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -4289,7 +4289,7 @@ a {
   margin: 0 2px;
 }
 .breadcrumb_area .breadcrumb_content .breadcrumb_category span a {
-  color: #fff;
+  color: #131313;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;

@@ -368,3 +368,21 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+const text = document.querySelector("#movingAdText");
+let textWidth = text.offsetWidth;
+let windowWidth = window.innerWidth;
+
+text.style.transition = "transform 1s linear";
+
+function animateText() {
+    text.style.transform = `translateX(${windowWidth}px)`;
+    setTimeout(() => {
+        text.style.transform = "translateX(0)";
+        setTimeout(() => {
+            animateText();
+        }, 1000);
+    }, textWidth);
+}
+
+animateText();
