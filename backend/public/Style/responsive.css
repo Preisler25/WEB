@@ -145,11 +145,16 @@
     }
 }
 
-@media(max-width:1430){
+@media(max-width:1430px){
     .breadcrumb_area .shape_img .two {
         display: none;
     }
 }
+
+@media(max-width:1600px){
+    .breadcrumb_area .shape_img .two {
+        right: 110px;
+    }
 
 @media(max-width: 1459px) {
     .hero_main .shape_img .one {
