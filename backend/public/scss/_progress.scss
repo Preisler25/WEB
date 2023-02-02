@@ -13,6 +13,13 @@
             line-height: 32px;
             margin-top: 30px;
         }
+        span{
+            color: $main-bg;
+            font-family: $inter;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 40px;
+        }
     }
 
     .line_progress_bar {

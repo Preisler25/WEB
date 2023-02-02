@@ -532,7 +532,7 @@
    display: inline-block;
  }
  .bg_btn_color:hover {
-   color: #131313;
+   color: #fff;
    box-shadow: none;
  }
  
@@ -1659,6 +1659,13 @@
  
  .creative_agency.about_us {
    padding-top: 100px;
+ }
+ .creative_agency.about_us span {
+   color: #ff5154;
+   font-family: "Inter", sans-serif;
+   font-weight: 600;
+   font-size: 19px;
+   line-height: 40px;
  }
  
  /* The Modal (background) */
@@ -2985,9 +2992,6 @@
  .offer_box.style_two .content .bg_btn_color {
    margin-top: 10px;
  }
- .offer_box.style_two .content .bg_btn_color:hover {
-   color: #fff;
- }
  .offer_box.style_two .min_offer_box {
    margin-top: 0;
  }
@@ -3201,6 +3205,13 @@
    font-size: 20px;
    line-height: 32px;
    margin-top: 30px;
+ }
+ .min_progress_area .content span {
+   color: #ff5154;
+   font-family: "Inter", sans-serif;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 40px;
  }
  .min_progress_area .line_progress_bar {
    margin-top: 50px;

@@ -153,6 +153,14 @@
 // About Us Creative Agency
 .creative_agency.about_us {
     padding-top: 100px;
+
+    span{
+        color: $main-bg;
+        font-family: $inter;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 40px;
+    }
 }
 
 //Popup
