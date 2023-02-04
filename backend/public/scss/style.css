@@ -1409,7 +1409,6 @@ a {
   transition: 0.3s;
   margin: 0 10px;
   margin-bottom: 48px;
-  height: 100%;
 }
 .min_team_area_innar .single_team img {
   width: 100%;
@@ -1662,25 +1661,39 @@ a {
 }
 .creative_agency.about_us span {
   color: #ff5154;
-  font-family: "Inter", sans-serif;
+  font-family: "ClashDisplay", sans-serif;
   font-weight: 600;
-  font-size: 19px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 34px;
+}
+.creative_agency.about_us #whyus {
+  border-left: #ff5154 4px solid;
+  padding-left: 50px;
 }
 
+.four_step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .four_step h2 {
+  margin-bottom: 30px;
+}
+.four_step h2, .four_step h3 {
   color: #131313;
   font-family: "ClashDisplay", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 34px;
   line-height: 34px;
 }
-.four_step h2 span {
-  color: #ff5154;
-  font-family: "ClashDisplay", sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 34px;
+.four_step h3 {
+  font-size: 30px;
+}
+.four_step img {
+  max-width: 25%;
+  max-height: 25%;
 }
 
 /* The Modal (background) */
@@ -1703,17 +1716,17 @@ a {
 
 /* Modal Content */
 .modal-content {
-  font-size: xx-large;
+  font-size: large;
   position: relative;
   bottom: 0;
   background-color: #fefefe;
-  width: 70%;
+  width: 50%;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 20px;
@@ -1722,7 +1735,7 @@ a {
 /* The Close Button */
 .close {
   color: white;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -1743,7 +1756,7 @@ a {
 }
 
 .modal-body {
-  padding: 2px 16px;
+  padding: 5px 2px;
   font-family: "Inter", sans-serif;
   font-size: large;
 }
@@ -1752,7 +1765,9 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 85px 16px;
+  padding: 5px 2px;
+  margin-top: 12px;
+  display: inline-block;
 }
 
 .item1, .item2 {
@@ -1761,6 +1776,12 @@ a {
 
 .item1.h3 {
   font-size: xx-large;
+}
+
+.popup-kep {
+  height: 80%;
+  margin-top: 12px;
+  margin-left: 8px;
 }
 
 /* Add Animation */
@@ -1802,6 +1823,7 @@ a {
 }
 #scroll-container {
   overflow: hidden;
+  display: inline-block;
 }
 
 #scroll-text {
@@ -1833,6 +1855,12 @@ a {
     transform: translateX(100%);
   }
 }
+.underline {
+  border-bottom: solid 3px #322b2b;
+  margin: -0.512em auto;
+  width: 100px;
+}
+
 .testimonial {
   padding-top: 160px;
   padding-bottom: 220px;
@@ -3135,6 +3163,18 @@ a {
   padding-bottom: 165px;
 }
 
+#popupbutton2 {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: "ClashDisplay", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+#popupbutton2:hover {
+  color: #ff5154;
+}
+
 .faq {
   padding-top: 150px;
   padding-bottom: 160px;
@@ -3343,6 +3383,7 @@ a {
   margin-top: 20px;
 }
 .min_contact_area .contact_form .input {
+  background: none;
   border: none;
   border-radius: 0;
   border-bottom: 2px solid #131313;
@@ -4586,6 +4627,9 @@ a {
   right: 0;
 }
 
+.main_footer .site_info {
+  text-align: center;
+}
 .main_footer .site_info img {
   margin-bottom: 40px;
 }
@@ -4593,12 +4637,14 @@ a {
   color: #131313;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 32px;
 }
 .main_footer .site_info .social_icons {
   display: flex;
   margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
 .main_footer .site_info .social_icons a {
   color: #010002;
@@ -4606,8 +4652,8 @@ a {
   border: 2px solid #131313;
   box-shadow: 2px 2px 0px #131313;
   border-radius: 50%;
-  height: 52px;
-  width: 52px;
+  height: 72px;
+  width: 72px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4615,7 +4661,7 @@ a {
   transition: 0.3s;
 }
 .main_footer .site_info .social_icons a i {
-  font-size: 18px;
+  font-size: 26px;
 }
 .main_footer .site_info .social_icons a:first-child {
   margin-left: 0;
@@ -4633,7 +4679,7 @@ a {
   color: #131313;
   font-family: "ClashDisplay", sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 34px;
   line-height: 34px;
   margin-bottom: 30px;
 }

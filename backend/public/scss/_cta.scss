@@ -44,3 +44,16 @@
 .cta.about_us {
     padding-bottom: 165px;
 }
+
+#popupbutton2{
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: $clash-display;
+    font-weight: 500;
+    padding: 10px 20px;
+
+    &:hover{
+        color: $important-color;
+    }
+}

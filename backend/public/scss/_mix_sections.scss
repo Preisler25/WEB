@@ -154,29 +154,41 @@
 .creative_agency.about_us {
     padding-top: 100px;
 
-    span{
+
+    span {
         color: $main-bg;
-        font-family: $inter;
+        font-family: $clash-display;
         font-weight: 600;
-        font-size: 19px;
-        line-height: 40px;
+        font-size: 32px;
+        line-height: 34px;
+    }
+    #whyus{
+        border-left: #ff5154 4px solid;
+        padding-left: 50px;
     }
 }
 .four_step{
-        h2 {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    h2{
+        margin-bottom: 30px;
+    }
+        h2,h3 {
             color: $pcolor;
             font-family: $clash-display;
             font-weight: 600;
-            font-size: 32px;
+            font-size: 34px;
             line-height: 34px;
-
-            span {
-                color: $main-bg;
-                font-family: $clash-display;
-                font-weight: 600;
-                font-size: 32px;
-                line-height: 34px;
-            }
+        }
+        h3{
+            font-size:30px;
+        }
+        img{
+            max-width: 25%;
+            max-height: 25%;
         }
 }
 
@@ -201,17 +213,17 @@
   
 /* Modal Content */
 .modal-content {
-    font-size: xx-large;
+    font-size: large;
     position: relative;
     bottom: 0;
     background-color: #fefefe;
-    width: 70%;
+    width: 50%;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 20px;
@@ -220,7 +232,7 @@
   /* The Close Button */
   .close {
     color: white;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
   }
   
@@ -241,7 +253,7 @@
   }
   
 .modal-body {
-    padding: 2px 16px;
+    padding: 5px 2px;
     font-family: $inter;
     font-size: large;
 }
@@ -250,7 +262,9 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 85px 16px;
+    padding: 5px 2px;
+    margin-top: 12px;
+    display: inline-block;
 }
 
 .item1, .item2 {
@@ -259,6 +273,12 @@
 
 .item1.h3 {
     font-size: xx-large;
+}
+
+.popup-kep {
+    height: 80%; 
+    margin-top: 12px; 
+    margin-left: 8px;
 }
 
 /* Add Animation */
@@ -286,6 +306,7 @@
 
 #scroll-container {
     overflow: hidden;
+    display: inline-block;
 }
 #scroll-text {
     text-align: right;
@@ -326,3 +347,9 @@ to {
     transform: translateX(100%);
 }
 }
+
+.underline {
+    border-bottom: solid 3px #322b2b;
+    margin: -0.512em auto;
+    width: 100px;
+  }
