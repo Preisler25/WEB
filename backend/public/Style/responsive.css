@@ -59,6 +59,31 @@
 }
 
 @media(max-width: 1600px) {
+    .item1 {
+        font-weight: 500;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .item2 li {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 13px 0;
+    }
+
+    .modal-content {
+        font-size: medium;
+    }
+
+    .close {
+        font-size: 40px;
+    }
+
+    #scroll-text {
+        font-size: large;
+    }
+
     .container {
         max-width: 1320px;
     }
@@ -725,6 +750,9 @@
 }
 
 @media(max-width: 991px) {
+    .calendly-inline-widget {
+        height:700px;
+    }
     .container {
         max-width: 720px;
     }
@@ -750,9 +778,6 @@
         display: none;
     }
 
-    .main_footer .site_info.logo_area {
-        padding-right: 50px;
-    }
 
     .footer_bottom {
         margin-top: 100px;

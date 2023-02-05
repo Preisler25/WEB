@@ -45,15 +45,16 @@
     padding-bottom: 165px;
 }
 
-#popupbutton2{
+#popupbuttoncta{
     color: black;
-    font-size: 24px;
+    font-size: 1.25em;
     text-decoration: none;
     font-family: $clash-display;
     font-weight: 500;
+    letter-spacing: 1px;
     padding: 10px 20px;
 
     &:hover{
-        color: $important-color;
+        color: $important;
     }
 }

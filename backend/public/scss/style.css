@@ -318,7 +318,7 @@ a {
 }
 .hero_marketing_agency .content .section_title p {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 22px;
   line-height: 38px;
   margin-top: 30px;
@@ -469,7 +469,7 @@ a {
 .hero_shop .content .section_title p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 22px;
   line-height: 38px;
   margin-top: 30px;
@@ -494,12 +494,12 @@ a {
   font-family: "Inter", sans-serif;
   color: #131313;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   background: #fff;
   border: 2px solid #131313;
   box-shadow: 4px 4px 0px #131313;
-  padding: 20px 50px;
+  padding: 20px 30px;
   text-transform: uppercase;
   transition: 0.3s;
   display: inline-block;
@@ -521,7 +521,7 @@ a {
   color: #131313;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   background: #ff5154;
   border: 2px solid #131313;
@@ -1577,8 +1577,8 @@ a {
 .creative_agency .content p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 22px;
   line-height: 32px;
   padding-top: 25px;
 }
@@ -1767,6 +1767,7 @@ a {
   height: 100%;
   padding: 5px 2px;
   margin-top: 12px;
+  margin-right: 10px;
   display: inline-block;
 }
 
@@ -1774,8 +1775,29 @@ a {
   flex: 1;
 }
 
-.item1.h3 {
-  font-size: xx-large;
+.item1 {
+  color: #ff5154;
+  font-family: "ClashDisplay", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.item2 {
+  list-style: none;
+}
+.item2 li {
+  color: #131313;
+  font-family: "ClashDisplay", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 15px 0;
+}
+.item2 i {
+  color: #ff5154;
+  transform: rotate(-45deg);
+  margin-right: 15px;
 }
 
 .popup-kep {
@@ -1857,8 +1879,19 @@ a {
 }
 .underline {
   border-bottom: solid 3px #322b2b;
-  margin: -0.512em auto;
+  margin: -0.512em auto 0.512em auto;
   width: 100px;
+}
+
+.bword {
+  color: #ff5154;
+  font-weight: 500;
+}
+
+.calendly-inline-widget {
+  min-width: 320px;
+  height: 1000px;
+  overflow: hidden;
 }
 
 .testimonial {
@@ -3163,16 +3196,17 @@ a {
   padding-bottom: 165px;
 }
 
-#popupbutton2 {
+#popupbuttoncta {
   color: black;
-  font-size: 24px;
+  font-size: 1.25em;
   text-decoration: none;
   font-family: "ClashDisplay", sans-serif;
   font-weight: 500;
+  letter-spacing: 1px;
   padding: 10px 20px;
 }
-#popupbutton2:hover {
-  color: #ff5154;
+#popupbuttoncta:hover {
+  color: #ff3232;
 }
 
 .faq {
@@ -3251,6 +3285,10 @@ a {
 .progress_area {
   padding-top: 150px;
   padding-bottom: 50px;
+}
+.progress_area #prog_img {
+  width: 95%;
+  height: auto;
 }
 
 .min_progress_area .content p {
@@ -4331,10 +4369,11 @@ a {
   border: 2px solid #131313;
   box-shadow: 4px 4px 0px #131313;
   padding: 10px 25px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .header_aria .navbar .navbar-collapse .nav_buttons .contact_btn:hover {
   box-shadow: none;
+  color: #ff3232;
 }
 
 .header_aria.navbar_fixed .navbar {
@@ -4610,8 +4649,8 @@ a {
 }
 
 .footer {
-  padding-top: 160px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   position: relative;
 }
 .footer .shape_img .one {
@@ -4636,7 +4675,7 @@ a {
 .main_footer .site_info p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   line-height: 32px;
 }
@@ -4671,9 +4710,6 @@ a {
   color: #ff5154;
   transform: translateY(-5px);
   border-color: #ff5154;
-}
-.main_footer .site_info.logo_area {
-  padding-right: 100px;
 }
 .main_footer .site_info h5 {
   color: #131313;
@@ -4749,6 +4785,7 @@ a {
 .footer_bottom .footer_bottom_list .footer_nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .footer_bottom .footer_bottom_list .footer_nav li {
   margin: 0 20px;
@@ -4777,7 +4814,7 @@ a {
 .footer_bottom .footer_copyright p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 32px;
 }/*# sourceMappingURL=style.css.map */

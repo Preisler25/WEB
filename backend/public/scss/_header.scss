@@ -118,10 +118,11 @@
                     border: 2px solid #131313;
                     box-shadow: 4px 4px 0px #131313;
                     padding: 10px 25px;
-                    transition: .3s;
+                    transition: .4s;
 
                     &:hover {
                         box-shadow: none;
+                        color: $important;
                     }
                 }
             }

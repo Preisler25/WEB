@@ -50,8 +50,8 @@
         p {
             color: $pcolor;
             font-family: $inter;
-            font-weight: 400;
-            font-size: 18px;
+            font-weight: 500;
+            font-size: 22px;
             line-height: 32px;
             padding-top: 25px;
         }
@@ -264,6 +264,7 @@
     height: 100%;
     padding: 5px 2px;
     margin-top: 12px;
+    margin-right: 10px;
     display: inline-block;
 }
 
@@ -271,10 +272,32 @@
     flex: 1;
 }  
 
-.item1.h3 {
-    font-size: xx-large;
+.item1 {
+    color: #ff5154;
+    font-family: "ClashDisplay", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 
+.item2 {
+    list-style: none;
+    li {
+        color: $pcolor;
+        font-family: $clash-display;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        margin: 15px 0;
+    }
+
+    i {
+        color: $main-bg;
+        transform: rotate(-45deg);
+        margin-right: 15px;
+    }
+
+}
 .popup-kep {
     height: 80%; 
     margin-top: 12px; 
@@ -350,6 +373,16 @@ to {
 
 .underline {
     border-bottom: solid 3px #322b2b;
-    margin: -0.512em auto;
+    margin: -0.512em auto 0.512em auto;
     width: 100px;
   }
+
+.bword{
+    color: $main-bg;
+    font-weight: 500;
+}
+.calendly-inline-widget{
+    min-width:320px;
+    height: 1000px;
+    overflow: hidden;
+}
