@@ -1543,7 +1543,7 @@
    color: #131313;
    font-family: "Inter", sans-serif;
    font-weight: 500;
-   font-size: 18px;
+   font-size: 20px;
    line-height: 32px;
    padding-top: 25px;
    padding-bottom: 25px;
@@ -1661,39 +1661,44 @@
  }
  .creative_agency.about_us span {
    color: #ff5154;
-   font-family: "ClashDisplay", sans-serif;
+   font-family: inherit;
    font-weight: 600;
-   font-size: 32px;
-   line-height: 34px;
+   font-size: inherit;
+   line-height: inherit;
  }
- .creative_agency.about_us #whyus {
-   border-left: #ff5154 4px solid;
-   padding-left: 50px;
- }
- 
- .four_step {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+ .creative_agency.about_us .section_title {
    text-align: center;
+   margin-bottom: 50px;
  }
- .four_step h2 {
-   margin-bottom: 30px;
+ .creative_agency.about_us .four_step {
+   display: flex;
+   flex-wrap: wrap;
  }
- .four_step h2, .four_step h3 {
+ .creative_agency.about_us .four_step .fitem {
+   flex: 1;
+   text-align: center;
+   padding: 20px;
+ }
+ .creative_agency.about_us .four_step p {
+   font-size: 1.3em;
+   color: #292929;
+   font-weight: 500;
+ }
+ .creative_agency.about_us .four_step h3 {
    color: #131313;
    font-family: "ClashDisplay", sans-serif;
    font-weight: 600;
    font-size: 34px;
    line-height: 34px;
+   padding: 10px 0 5px 0;
  }
- .four_step h3 {
-   font-size: 30px;
+ .creative_agency.about_us .four_step .fi {
+   font-size: 2em;
+   vertical-align: middle;
  }
- .four_step img {
-   max-width: 25%;
-   max-height: 25%;
+ .creative_agency.about_us .four_step img {
+   max-width: 50%;
+   max-height: 50%;
  }
  
  /* The Modal (background) */
@@ -3172,8 +3177,8 @@
  }
  .cta .min_cta_area p {
    font-family: "Inter", sans-serif;
-   font-weight: 400;
-   font-size: 18px;
+   font-weight: 600;
+   font-size: 20px;
    line-height: 32px;
    margin-bottom: 30px;
  }

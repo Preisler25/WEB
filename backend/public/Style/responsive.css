@@ -1094,7 +1094,7 @@
     }
 
     .digital_agency .content .agency_list li {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .min_testimonial_area .single_testimonial {
@@ -1840,3 +1840,13 @@
         margin-top: 24px;
     }
 }
+@media (max-width: 1200px) {
+    .four_step {
+      flex-direction: column;
+    }
+    .fitem {
+      flex: 0;
+      width: 100%;
+    }
+}
+  }

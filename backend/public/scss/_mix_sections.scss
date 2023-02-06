@@ -8,7 +8,7 @@
             color: $pcolor;
             font-family: $inter;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 32px;
             padding-top: 25px;
             padding-bottom: 25px;
@@ -152,44 +152,51 @@
 
 // About Us Creative Agency
 .creative_agency.about_us {
+
     padding-top: 100px;
-
-
-    span {
+    span{
         color: $main-bg;
-        font-family: $clash-display;
+        font-family: inherit;
         font-weight: 600;
-        font-size: 32px;
-        line-height: 34px;
+        font-size: inherit;
+        line-height: inherit;
     }
-    #whyus{
-        border-left: #ff5154 4px solid;
-        padding-left: 50px;
-    }
+    .section_title{
+        text-align: center;
+        margin-bottom: 50px;
 }
 .four_step{
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
-    h2{
-        margin-bottom: 30px;
-    }
-        h2,h3 {
+        display: flex;
+        flex-wrap: wrap;
+      
+      .fitem {
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      p {
+        font-size: 1.3em;
+        color: #292929;
+        font-weight: 500;
+      }
+        h3 {
             color: $pcolor;
             font-family: $clash-display;
             font-weight: 600;
             font-size: 34px;
             line-height: 34px;
+            padding: 10px 0 5px 0;
         }
-        h3{
-            font-size:30px;
-        }
+    .fi{
+        font-size: 2em;
+        vertical-align: middle;
+    }
         img{
-            max-width: 25%;
-            max-height: 25%;
+            max-width: 50%;
+            max-height: 50%;
         }
+}
 }
 
 //Popup
