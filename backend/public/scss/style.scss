@@ -34,7 +34,7 @@
  * 24/ breadcrumb 
  * 25/ sidebar 
  * 26/ footer 
- * 
+ * 27.../modal popup
  * 
  * =====================================================================
  *
@@ -71,3 +71,7 @@
 @import 'breadcrumb';
 @import 'sidebar';
 @import 'footer';
+@import 'popup/variables';
+@import 'popup/base';
+@import 'popup/modal';
+@import 'popup/breakpoints';

@@ -339,7 +339,7 @@
 
 // PopUp windows
 // Get the modal
-var modal = document.getElementById("myModal");
+/* var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("popupbutton1");
@@ -385,4 +385,26 @@ function animateText() {
     }, textWidth);
 }
 
-animateText();
+animateText(); */
+
+/*=============== SHOW MODAL ===============*/
+const showModal = (openButton, modalContent) =>{
+    const openBtn = document.getElementById(openButton),
+    modalContainer = document.getElementById(modalContent)
+    
+    if(openBtn && modalContainer){
+        openBtn.addEventListener('click', ()=>{
+            modalContainer.classList.add('show-modal')
+        })
+    }
+}
+showModal('open-modal','modal-container')
+
+/*=============== CLOSE MODAL ===============*/
+const closeBtn = document.querySelectorAll('.close-modal')
+
+function closeModal(){
+    const modalContainer = document.getElementById('modal-container')
+    modalContainer.classList.remove('show-modal')
+}
+closeBtn.forEach(c => c.addEventListener('click', closeModal))

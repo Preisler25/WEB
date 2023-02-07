@@ -1,0 +1,98 @@
+/*=============== MODAL ===============*/
+
+    .modal-button{
+        display: inline-block;
+        background-color: $main-bg;
+        color: #FFF;
+        padding: 1rem 1.25rem;
+        border-radius: .5rem;
+        transition: .3s;
+        font-weight: 500;
+        
+        &:hover{
+            background-color: var(--first-color-alt);
+        }
+        
+    }
+    .modal-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: hsla(var(--hue), 18%, 75%, .8);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-items: flex-end;
+        overflow: hidden;
+        transition: all .3s;
+        z-index: var(--z-modal);
+        visibility: hidden;
+        opacity: 0;
+
+        /* === Effect 3 === */
+        /* perspective: 1000px; */
+    }
+    .modal-content{
+        position: relative;
+        background-color: var(--container-color);
+        text-align: center;
+        padding: 3rem 2rem 2rem;
+        border-radius: 1rem 1rem 0 0;
+        transition: all .3s;
+
+        /* === Effect 1 === */
+        transform: translateY(10%);
+
+        /* === Effect 2 === */
+        /* transform: scale(.5) translateY(10%); */
+
+        /* === Effect 3 === */
+        /* transform-origin: 50% 100%; */
+        /* transform: rotateX(65deg) scale(.75) translateY(10%); */
+
+    }
+    .modal-img{
+        width: 100%;
+        margin-bottom: .75rem;
+    }
+    .modal-close{
+        display: inline-flex;
+        background-color: var(--first-color);
+        border-radius: .25rem;
+        color: #FFF;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+    .modal-title{
+        font-size: var(--big-font-size);
+        color: var(--title-color);
+        font-weight: 500;
+        font-family: $clash-display;
+    }
+    .modal-description{
+        margin-bottom: 1.5rem;
+    }
+    .modal-button-width{
+        width: 100%;
+    }
+
+
+/* Show modal */
+.show-modal{
+    visibility: visible;
+    opacity: 1;
+}
+
+.show-modal .modal__content{
+    /* === Effect 1 === */
+    transform: translateY(0);
+
+    /* === Effect 2 === */
+    /* transform: scale(1) translateY(0); */
+
+    /* === Effect 3 === */
+    /* transform: rotateX(0) scale(1) translateY(0); */
+}

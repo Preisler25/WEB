@@ -1,0 +1,12 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (min-width: 576px){
+        .modal-content{
+            margin: auto;
+            width: 380px;
+            border-radius: 1.25rem;
+        }
+        .modal-img{
+            width: 100%;
+        }
+    }
