@@ -36,17 +36,9 @@
                         padding: 0;
                         padding-top: 30px;
                         padding-bottom: 25px;
-
-                        i {
-                            display: none;
-
-                            @media(max-width: 991px) {
-                                display: block;
-                                right: 0;
-                                top: 20px;
-                                position: absolute;
-                                color: #fff;
-                            }
+                        @media(max-width: 991px) {
+                            color: #000;
+                        }
                         }
                     }
 
@@ -128,7 +120,7 @@
             }
         }
     }
-}
+
 
 // Header Fixed
 .header_aria.navbar_fixed {

@@ -3,10 +3,16 @@
 @media screen and (min-width: 576px){
         .modal-content{
             margin: auto;
-            width: 380px;
+            width: 460px;
             border-radius: 1.25rem;
+            padding-bottom:2rem;
         }
         .modal-img{
             width: 100%;
         }
+    }
+
+    @media screen and (max-width: 576px){
+        .modal-content{padding-bottom: 7rem;}
+        
     }

@@ -8,6 +8,7 @@
         border-radius: .5rem;
         transition: .3s;
         font-weight: 500;
+        font-size: var(--normal-font-size);
         
         &:hover{
             background-color: var(--first-color-alt);
@@ -36,7 +37,7 @@
         position: relative;
         background-color: var(--container-color);
         text-align: center;
-        padding: 3rem 2rem 2rem;
+        padding: 3rem 2rem 5rem;
         border-radius: 1rem 1rem 0 0;
         transition: all .3s;
 
@@ -74,11 +75,12 @@
     }
     .modal-description{
         margin-bottom: 1.5rem;
+        font-weight: 500;
+        font-size: var(--normal-font-size);
     }
     .modal-button-width{
         width: 100%;
     }
-
 
 /* Show modal */
 .show-modal{
@@ -95,4 +97,7 @@
 
     /* === Effect 3 === */
     /* transform: rotateX(0) scale(1) translateY(0); */
+}
+.bx{
+    padding: 2px;
 }

@@ -28,7 +28,9 @@
                     $('.header_aria').addClass('navbar_fixed');
                     $('#logo').attr('src', 'img/logo/logo.png');
                     $('#barikon').css('color', '#000');
-                if ($(window).width() > 992) {
+               if ($(window).width() > 991) {
+                    $('.navbar-nav > li > a').css('color', '#fff');
+                } else {
                     $('.navbar-nav > li > a').css('color', '#000');
                 }
                 }
@@ -389,14 +391,14 @@ animateText(); */
 
 /*=============== SHOW MODAL ===============*/
 const showModal = (openButton, modalContent) =>{
-    const openBtn = document.getElementById(openButton),
+    const openBtns = document.querySelectorAll(`.${openButton}`),
     modalContainer = document.getElementById(modalContent)
     
-    if(openBtn && modalContainer){
+    openBtns.forEach(openBtn => {
         openBtn.addEventListener('click', ()=>{
             modalContainer.classList.add('show-modal')
         })
-    }
+    });
 }
 showModal('open-modal','modal-container')
 

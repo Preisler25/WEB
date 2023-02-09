@@ -2860,8 +2860,8 @@ a {
 .min_offer_box .single_offer_box .content p {
   color: #131313;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 19px;
   line-height: 32px;
   margin-top: 15px;
 }
@@ -4112,52 +4112,45 @@ a {
   padding-top: 30px;
   padding-bottom: 25px;
 }
-.header_aria .navbar .navbar-collapse .navbar-nav .nav-item .nav-link i {
-  display: none;
-}
 @media (max-width: 991px) {
-  .header_aria .navbar .navbar-collapse .navbar-nav .nav-item .nav-link i {
-    display: block;
-    right: 0;
-    top: 20px;
-    position: absolute;
-    color: #fff;
+  .header_aria .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #000;
   }
 }
-.header_aria .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
+.header_aria .navbar .navbar-collapse .navbar-nav.dropdown .dropdown-menu {
   padding-right: 50px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.header_aria .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li {
+.header_aria .navbar .navbar-collapse .navbar-nav.dropdown .dropdown-menu li {
   margin: 5px 0;
 }
-.header_aria .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li a {
+.header_aria .navbar .navbar-collapse .navbar-nav.dropdown .dropdown-menu li a {
   text-transform: uppercase;
   color: #131313;
   font-size: 14px;
 }
-.header_aria .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li a:hover {
+.header_aria .navbar .navbar-collapse .navbar-nav.dropdown .dropdown-menu li a:hover {
   background-color: transparent;
   color: #ff5154;
 }
-.header_aria .navbar .navbar-collapse .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+.header_aria .navbar .navbar-collapse .navbar-nav.dropdown:hover .dropdown-menu {
   display: block;
   transform: translateY(0);
   left: -25px;
   top: 75px;
 }
-.header_aria .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .nav-link::after {
+.header_aria .navbar .navbar-collapse .navbar-nav.dropdown .nav-link::after {
   display: none;
 }
-.header_aria .navbar .navbar-collapse .nav_buttons {
+.header_aria .navbar .nav_buttons {
   padding-left: 49px;
   border-left: 2px solid #fff;
   padding-top: 30px;
   padding-bottom: 25px;
 }
-.header_aria .navbar .navbar-collapse .nav_buttons .cart {
+.header_aria .navbar .nav_buttons .cart {
   color: #131313;
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -4165,7 +4158,7 @@ a {
   line-height: 24px;
   text-transform: uppercase;
 }
-.header_aria .navbar .navbar-collapse .nav_buttons .contact_btn {
+.header_aria .navbar .nav_buttons .contact_btn {
   display: inline-block;
   color: #131313;
   font-family: "Inter", sans-serif;
@@ -4179,7 +4172,7 @@ a {
   padding: 10px 25px;
   transition: 0.4s;
 }
-.header_aria .navbar .navbar-collapse .nav_buttons .contact_btn:hover {
+.header_aria .navbar .nav_buttons .contact_btn:hover {
   box-shadow: none;
   color: #ff3232;
 }
@@ -4626,15 +4619,15 @@ a {
   --container-color: #FFF;
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
-  --big-font-size: 1.5rem;
-  --normal-font-size: .938rem;
+  --big-font-size: 1.7rem;
+  --normal-font-size: 1.2rem;
   /*========== z index ==========*/
   --z-modal: 9999;
 }
 @media screen and (min-width: 968px) {
   :root {
-    --big-font-size: 1.75rem;
-    --normal-font-size: 1rem;
+    --big-font-size: 2rem;
+    --normal-font-size: 1.3rem;
   }
 }
 
@@ -4647,6 +4640,7 @@ a {
   border-radius: 0.5rem;
   transition: 0.3s;
   font-weight: 500;
+  font-size: var(--normal-font-size);
 }
 .modal-button:hover {
   background-color: var(--first-color-alt);
@@ -4674,7 +4668,7 @@ a {
   position: relative;
   background-color: var(--container-color);
   text-align: center;
-  padding: 3rem 2rem 2rem;
+  padding: 3rem 2rem 5rem;
   border-radius: 1rem 1rem 0 0;
   transition: all 0.3s;
   /* === Effect 1 === */
@@ -4712,6 +4706,8 @@ a {
 
 .modal-description {
   margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: var(--normal-font-size);
 }
 
 .modal-button-width {
@@ -4733,15 +4729,25 @@ a {
   /* transform: rotateX(0) scale(1) translateY(0); */
 }
 
+.bx {
+  padding: 2px;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (min-width: 576px) {
   .modal-content {
     margin: auto;
-    width: 380px;
+    width: 460px;
     border-radius: 1.25rem;
+    padding-bottom: 2rem;
   }
   .modal-img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .modal-content {
+    padding-bottom: 7rem;
   }
 }/*# sourceMappingURL=style.css.map */
